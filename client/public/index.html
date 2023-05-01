@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>HOLA</h1>
+
+    <div class="container">
+        <div class="left">
+            <div class="foreground">
+                <div class="top">
+                    <h1 id="day">Martes</h1>
+                    <h3 id="date">16 de Mayo de 2023</h3>
+                    <h3>Madrid, ES</h3>
+                </div>
+                <div class="bottom">
+                    <h3 id="temp">24ºC</h3>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div>
+                    <ul>
+                        <li>PRESSURE: </li>
+                        <li>ALTITUDE: </li>
+                        <li>PROVIDER: </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li id="press">1013 hpa</li>
+                        <li id="alt">583 m</li>
+                        <li id="provider">LVSAT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io('http://192.168.1.74:3000');
-        
-      
-        socket.on('ok', (data) => {
-            document.querySelector('h1').innerText = data
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>

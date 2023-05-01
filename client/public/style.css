@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: rgb(52, 61, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 75vw;
+    background: rgb(34, 40, 49);
+    border-radius: 25px;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    color: #eee;
+    z-index: -2;
+}
+
+.left {
+    background: url(https://images.unsplash.com/photo-1570135460230-1407222b82a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1916&q=80);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: -5vh -40vh;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    
+}
+.foreground {
+    background-image: linear-gradient(to bottom, rgba(51, 153, 144, 0.8), rgba(51, 51, 153, 0.7));
+    border-radius: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.foreground div {
+    margin: 15px;
+}
+
+.left .top {
+    line-height: 250%;
+    letter-spacing: 5px;
+    position: relative;
+    left: 5%;
+}
+.left .bottom {
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 6px;
+    position: relative;
+    left: 5%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .top {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.75rem;
+}
+.right .top div {
+    padding: 15px;
+    margin: 15px;
+    line-height: 15vh;
+}
+
+.right .top div:nth-child(2) {
+    width: 75%;
+    text-align: right;
+}
+ul {
+    list-style: none;
+}
